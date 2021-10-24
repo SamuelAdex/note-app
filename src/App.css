@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+.container{
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+  padding-top: 12px;
+  transition: .5s ease-in;
+}
+
+.header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom:8px;
+}
+.header button{
+  background: rgb(235, 229, 229);
+  font-weight: bold;
+  border:none;
+  border-radius:12px;
+  padding: 12px;
+  transition: .5s ease-in;
+}
+.header button:hover{
+  box-shadow: 0 0 4px 1px gray
+}
+
+.note-list{
+  display: grid;
+  margin-top: 15px;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  transition: .8s ease-in-out;
+}
+
+.note.new{
+  background: #67d7cc;
+}
+textarea{
+  background: #67d7cc;
+  border:none;
+  margin-bottom:5px;
+  padding: 8px;
+  resize: none;
+  font-family: monospace;
+}
+.new textarea:focus{
+  outline:none;
+}
+.note.new button{
+  background: whitesmoke;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight:bold;
+  border:none;
+  color: #67d7cc;
+}
+
+.note{
+  background: #fef68a;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  margin-bottom: 15px;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  transition: .8s ease-in-out;
+  white-space: pre-wrap;
+  text-overflow:clip;
+}
+
+.note-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.note-footer b{
+  color: red;
+  cursor:pointer;
+  transition: .5s ease-in;
+}
+.note-footer b:active{
+  caret-color:rgb(233, 51, 51);
+}
+
+.search{
+  margin-top: 12px;
+  display:flex;
+  background:rgb(235, 229, 229);
+  padding: 10px;
+  border-radius: 12px;
+}
+.search input{
+  background: rgb(235, 229, 229);
+  border:none;
+  font-size:10pt;
+  width:100%;
+}
+.search input:focus{
+  outline:none;
+}
+
+.dark-mode{
+  background: #011627;
+  padding: 0;
+  margin: 0;
+  transition: .5s ease-out;
+}
+.dark-mode h1{
+  color:whitesmoke;
+  transition: .5s ease-out;
+}
